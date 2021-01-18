@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+table, th, td {
+  border: 1px solid black;
+  margin-left:480px;
+}
+</style>
+</head>
+<body>
+	<div style="background-color:black;height:60px;margin-left:-8px;margin-right:-8px;">
+<a href = "index.html"><button style="margin-top:15px;margin-left:1400px;background-color: #71c21b;border:none;padding:8px;color:white;">Logout</button></a><br></div><br>
+	<div style="background-image: url('https://static.toiimg.com/photo/69024200.cms');
+	background-repeat:no-repeat;height:750px;margin-top:-20px;
+	background-size:cover;">
+<br>
+<div style="color:white;">
+	<table >
+  <tr>
+    <th>Name</th>
+    <th>E-Mail</th>
+    <th>Mobile</th>
+    <th>Gender</th>
+    <th>Age</th>
+  </tr>
+<% for(var i=0;i<data.length;i++){ %>
+<tr>
+	<th><%= data[i].firstName %></th>
+	<th><%= data[i].email %></th>
+	<th><%= data[i].mobile %></th>
+	<th><%= data[i].genders %></th>
+	<th><%= data[i].Age %></th>
+<% } %></div></table>
+
+</div>
+</body>
+</html>
